@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -9,6 +9,13 @@
     <OutputType>Exe</OutputType>
     <AssemblyName>Mono.Upnp.Dcp.MediaServer1.FileSystem.ConsoleServer</AssemblyName>
     <RootNamespace>Mono.Upnp.Dcp.MediaServer1.FileSystem.ConsoleServer</RootNamespace>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,6 +32,7 @@
         <Variable name="MONO_UPNP_DEBUG" value="TRUE" />
       </EnvironmentVariables>
     </EnvironmentVariables>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -33,6 +41,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,9 +53,7 @@
     <Compile Include="Mono.Upnp.Dcp.MediaServer1.FileSystem.ConsoleServer\Options.cs" />
     <Compile Include="Mono.Upnp.Dcp.MediaServer1.FileSystem.ConsoleServer\DummyMSMediaReceiverRegistrar.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Mono.Upnp.Dcp.MediaServer1.FileSystem.ConsoleServer\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Mono.Upnp.Dcp.MediaServer1.FileSystem\Mono.Upnp.Dcp.MediaServer1.FileSystem.csproj">
       <Project>{5AD8D852-8ADA-477E-AA76-0958CAB1D881}</Project>
@@ -64,6 +71,9 @@
       <Project>{1203E9D4-B1F3-4838-8275-91782C8EC6E4}</Project>
       <Name>Mono.Upnp.Dcp.MSMediaReceiverRegistrar1</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
