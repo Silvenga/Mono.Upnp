@@ -39,6 +39,7 @@ using NUnit.Framework;
 
 namespace Mono.Upnp.Tests
 {
+    [Ignore("Ignored due to HttpListener restrictions on Windows.")]
     [TestFixture]
     public class ServerTests
     {

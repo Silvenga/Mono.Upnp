@@ -31,6 +31,8 @@ using System.Reflection;
 
 namespace Mono.Upnp.Xml.Compilation
 {
+    using System.Xml;
+
     public class DelegateSerializationCompiler<TContext> : SerializationCompiler<TContext>
     {
         public DelegateSerializationCompiler (XmlSerializer<TContext> xmlSerializer, Type type)

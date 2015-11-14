@@ -33,6 +33,7 @@ using Mono.Upnp.Control;
 
 namespace Mono.Upnp.Tests
 {
+    [Ignore("Ignored due to HttpListener restrictions on Windows.")]
     [TestFixture]
     public class ClientTests
     {

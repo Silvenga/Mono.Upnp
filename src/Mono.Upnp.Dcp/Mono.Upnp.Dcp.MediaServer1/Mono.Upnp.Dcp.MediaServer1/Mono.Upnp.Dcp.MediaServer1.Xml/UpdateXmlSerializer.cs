@@ -67,8 +67,13 @@ namespace Mono.Upnp.Dcp.MediaServer1.Xml
             var encoding = options != null ? options.Encoding ?? Helper.UTF8Unsigned : Helper.UTF8Unsigned;
             var update_writer = new UpdateTextWriter (new StreamWriter (stream, encoding));
             var context = new UpdateContext (obj2, stream, encoding);
-            using (var xml_writer = XmlWriter.Create (update_writer, new XmlWriterSettings {
-                Encoding = encoding, OmitXmlDeclaration = true })) {
+            var settings = new XmlWriterSettings
+            {
+                Encoding = encoding,
+                OmitXmlDeclaration = true,
+                ConformanceLevel = ConformanceLevel.Fragment
+            };
+            using (var xml_writer = XmlWriter.Create (update_writer, settings)) {
                 xml_serializer.Serialize (obj1, xml_writer, context);
             }
             return context.Delineated;
