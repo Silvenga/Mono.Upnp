@@ -1,5 +1,9 @@
 # Mono.Upnp
 
+[![Nuget Package](https://img.shields.io/nuget/v/Mono.Upnp.svg)](https://www.nuget.org/packages/Mono.Upnp/)
+[![License](https://img.shields.io/github/license/silvenga/mono-upnp.svg)](https://github.com/Silvenga/mono-upnp/blob/master/COPYING)
+[![Build status](https://ci.appveyor.com/api/projects/status/gwndyn9pu9ekf76a?svg=true)](https://ci.appveyor.com/project/Silvenga/mono-upnp)
+
 Mono.Upnp is set of client/server libraries for the Universal Plug 'n Play
 specifications. See <http://www.upnp.org>.
 
