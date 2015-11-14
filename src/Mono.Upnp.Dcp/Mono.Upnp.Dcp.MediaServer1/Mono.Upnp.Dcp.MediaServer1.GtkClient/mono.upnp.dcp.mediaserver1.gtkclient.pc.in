@@ -1,9 +1,0 @@
-assemblies_dir=@expanded_libdir@/@PACKAGE@
-Libraries=${assemblies_dir}/Mono.Upnp.Dcp.MediaServer1.GtkClient.dll
-
-Name: Mono.Upnp.Dcp.MediaServer1.GtkClient
-Description: Mono.Upnp.Dcp.MediaServer1.GtkClient
-Version: @VERSION@
-
-Requires: 
-Libs: -r:${assemblies_dir}/Mono.Upnp.Dcp.MediaServer1.GtkClient.dll
