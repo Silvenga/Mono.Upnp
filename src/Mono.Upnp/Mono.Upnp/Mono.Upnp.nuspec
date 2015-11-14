@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Mono Project</authors>
+    <owners>Silvenga</owners>
+    <licenseUrl>https://github.com/Silvenga/mono-upnp/blob/master/COPYING</licenseUrl>
+    <projectUrl>https://github.com/Silvenga/mono-upnp</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Non-maintainer release.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>mono-upnp upnp</tags>
+  </metadata>
+</package>
